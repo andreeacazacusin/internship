@@ -52,8 +52,8 @@ namespace TestFormsApp
         {
             if (e.ColumnIndex == 0)
             {
-                MessageBox.Show("EDIT button clicked at row: " + this.booksGridView.Rows[e.RowIndex].Cells[2].Value);
-                
+                AddOrEditBookForm editBook = new AddOrEditBookForm(this, (int)booksGridView.Rows[e.RowIndex].Cells["Id"].Value);
+                editBook.ShowDialog();
             }
             else
             {

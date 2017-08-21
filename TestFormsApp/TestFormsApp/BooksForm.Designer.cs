@@ -41,7 +41,7 @@
             this.booksGridView.Location = new System.Drawing.Point(24, 28);
             this.booksGridView.Name = "booksGridView";
             this.booksGridView.ReadOnly = true;
-            this.booksGridView.Size = new System.Drawing.Size(652, 221);
+            this.booksGridView.Size = new System.Drawing.Size(762, 221);
             this.booksGridView.TabIndex = 0;
             this.booksGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -59,7 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 261);
+            this.ClientSize = new System.Drawing.Size(798, 261);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.booksGridView);
             this.Name = "BooksForm";

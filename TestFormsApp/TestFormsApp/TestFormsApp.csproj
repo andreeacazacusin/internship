@@ -154,6 +154,10 @@
       <DependentUpon>LibraryModel.edmx</DependentUpon>
       <LastGenOutput>LibraryModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\delete.jpg" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\loan.png" />
+    <Content Include="Resources\loanback.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
