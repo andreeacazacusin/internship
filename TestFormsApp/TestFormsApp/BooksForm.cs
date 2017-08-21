@@ -9,6 +9,17 @@ namespace TestFormsApp
         public BooksForm()
         {
             InitializeComponent();
+            DataGridViewButtonColumn buttonColEdit = new DataGridViewButtonColumn();
+            buttonColEdit.Name = "Edit";
+            buttonColEdit.Text = "Edit";
+            buttonColEdit.UseColumnTextForButtonValue = true;
+            DataGridViewButtonColumn buttonColDelete = new DataGridViewButtonColumn();
+            buttonColDelete.Name = "Delete";
+            buttonColDelete.Text = "Delete";
+            buttonColDelete.UseColumnTextForButtonValue = true;
+
+            booksGridView.Columns.Add(buttonColEdit);
+            booksGridView.Columns.Add(buttonColDelete);
         }
 
         public void RefreshData()
@@ -33,17 +44,7 @@ namespace TestFormsApp
                     Author = x.Author,
                     Description = x.Description
                 }).ToList();
-                DataGridViewButtonColumn buttonColEdit = new DataGridViewButtonColumn();
-                buttonColEdit.Name = "Edit";
-                buttonColEdit.Text = "Edit";
-                buttonColEdit.UseColumnTextForButtonValue = true;
-                DataGridViewButtonColumn buttonColDelete = new DataGridViewButtonColumn();
-                buttonColDelete.Name = "Delete";
-                buttonColDelete.Text = "Delete";
-                buttonColDelete.UseColumnTextForButtonValue = true;
-
-                booksGridView.Columns.Add(buttonColEdit);
-                booksGridView.Columns.Add(buttonColDelete);
+                
                 this.booksGridView.DataSource = books;
             }
         }
