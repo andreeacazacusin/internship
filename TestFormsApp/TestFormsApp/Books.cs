@@ -19,7 +19,13 @@ namespace TestFormsApp
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            Console.WriteLine(sender);
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddOrEditBook addBook = new AddOrEditBook();
+            addBook.ShowDialog();
         }
     }
 }
