@@ -71,14 +71,6 @@
     <Compile Include="BooksForm.Designer.cs">
       <DependentUpon>BooksForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="booksDataSet.cs">
-      <DependentUpon>booksDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="booksDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>booksDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>LibraryModel.tt</DependentUpon>
     </Compile>
@@ -124,17 +116,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="booksDataSet.xsc">
-      <DependentUpon>booksDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="booksDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>booksDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="booksDataSet.xss">
-      <DependentUpon>booksDataSet.xsd</DependentUpon>
-    </None>
     <EntityDeploy Include="LibraryModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LibraryModel.Designer.cs</LastGenOutput>
