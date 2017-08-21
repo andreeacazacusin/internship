@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Configuration;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace TestFormsApp
@@ -20,22 +18,27 @@ namespace TestFormsApp
         private void button1_Click(object sender, EventArgs e)
         {
             if (IsValid())
-            {
-                SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["TestFormsApp.Properties.Settings.libraryConnectionString"].ToString());
-                try
+            {   
+                using (var connection = new LibraryEntities())
                 {
-                    sqlConnection.Open();
-                    string sql = $"insert into Books(InventoryNumber, Author, Title, Description) VALUES('{textBoxInventoryNumber.Text}', '{textBoxAuthor.Text}', '{textBoxTitle.Text}', '{textBoxDescription.Text}')";
-                    var sqlCommand = new SqlCommand(sql, sqlConnection);
-                    sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Book was added successfully");
-                }
-                catch (Exception exception) {
-                    MessageBox.Show("An error occured while adding a new book");
-                }
-                finally
-                {
-                    sqlConnection.Close();                    
+                    try
+                    {
+                        var book = new Books
+                        {
+                            InventoryNumber = textBoxInventoryNumber.Text,
+                            Title = textBoxTitle.Text,
+                            Author = textBoxAuthor.Text,
+                            Description = textBoxDescription.Text
+                        };
+                        connection.Books.Add(book);
+                        connection.SaveChanges();
+                        MessageBox.Show("Book was added successfully");
+                    }
+                    catch(Exception exception)
+                    {
+                        MessageBox.Show("An error occured while adding a new book");
+                    }
+                    
                 }
             }
         }
