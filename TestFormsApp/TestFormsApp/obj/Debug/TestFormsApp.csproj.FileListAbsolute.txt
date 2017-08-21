@@ -1,0 +1,12 @@
+D:\Work\internship\TestFormsApp\TestFormsApp\bin\Debug\TestFormsApp.exe.config
+D:\Work\internship\TestFormsApp\TestFormsApp\bin\Debug\TestFormsApp.exe
+D:\Work\internship\TestFormsApp\TestFormsApp\bin\Debug\TestFormsApp.pdb
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.csprojResolveAssemblyReference.cache
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.Properties.Resources.resources
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.csproj.GenerateResource.Cache
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.csproj.CoreCompileInputs.cache
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.exe
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.pdb
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.Welcome.resources
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.Books.resources
+D:\Work\internship\TestFormsApp\TestFormsApp\obj\Debug\TestFormsApp.AddOrEditBook.resources

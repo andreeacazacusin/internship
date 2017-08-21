@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace TestFormsApp
 {
-    public partial class Form1 : Form
+    public partial class AddOrEditBook : Form
     {
-        public Form1()
+        public AddOrEditBook()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
+        }        
     }
 }
