@@ -1,6 +1,6 @@
 ﻿namespace TestFormsApp
 {
-    partial class Books
+    partial class BooksForm
     {
         /// <summary>
         /// Required designer variable.

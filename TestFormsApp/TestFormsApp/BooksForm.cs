@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace TestFormsApp
 {
-    public partial class Books : Form
+    public partial class BooksForm : Form
     {
-        public Books()
+        public BooksForm()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace TestFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddOrEditBook addBook = new AddOrEditBook();
+            AddOrEditBookForm addBook = new AddOrEditBookForm();
             addBook.ShowDialog();
         }
     }

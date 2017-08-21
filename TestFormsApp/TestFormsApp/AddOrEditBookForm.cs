@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace TestFormsApp
 {
-    public partial class AddOrEditBook : Form
+    public partial class AddOrEditBookForm : Form
     {
-        public AddOrEditBook()
+        public AddOrEditBookForm()
         {
             InitializeComponent();
         }

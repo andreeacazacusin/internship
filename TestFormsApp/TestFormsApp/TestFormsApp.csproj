@@ -47,17 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddOrEditBook.cs">
+    <Compile Include="AddOrEditBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddOrEditBook.Designer.cs">
-      <DependentUpon>AddOrEditBook.cs</DependentUpon>
+    <Compile Include="AddOrEditBookForm.Designer.cs">
+      <DependentUpon>AddOrEditBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Books.cs">
+    <Compile Include="BooksForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Books.Designer.cs">
-      <DependentUpon>Books.cs</DependentUpon>
+    <Compile Include="BooksForm.Designer.cs">
+      <DependentUpon>BooksForm.cs</DependentUpon>
     </Compile>
     <Compile Include="booksDataSet.cs">
       <DependentUpon>booksDataSet.xsd</DependentUpon>
@@ -67,22 +67,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>booksDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Welcome.cs">
+    <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Welcome.Designer.cs">
-      <DependentUpon>Welcome.cs</DependentUpon>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddOrEditBook.resx">
-      <DependentUpon>AddOrEditBook.cs</DependentUpon>
+    <EmbeddedResource Include="AddOrEditBookForm.resx">
+      <DependentUpon>AddOrEditBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Books.resx">
-      <DependentUpon>Books.cs</DependentUpon>
+    <EmbeddedResource Include="BooksForm.resx">
+      <DependentUpon>BooksForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Welcome.resx">
-      <DependentUpon>Welcome.cs</DependentUpon>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

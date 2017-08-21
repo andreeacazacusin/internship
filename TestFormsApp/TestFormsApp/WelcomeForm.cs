@@ -3,16 +3,16 @@ using System.Windows.Forms;
 
 namespace TestFormsApp
 {
-    public partial class Welcome : Form
+    public partial class WelcomeForm : Form
     {
-        public Welcome()
+        public WelcomeForm()
         {
             InitializeComponent();
         }       
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Books books = new Books();
+            BooksForm books = new BooksForm();
             books.ShowDialog();
         }
     }
